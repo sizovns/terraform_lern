@@ -51,3 +51,9 @@ Just move from `web_server.tf` to `main.tf` to terraform code style
 
 Work with server dependencies
 - depends_on used as array for dependency servers from each other
+
+## lesson-9
+
+[Data source](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/instance) and [Meta Data Sources](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region)
+
+Learn on creation subnets
