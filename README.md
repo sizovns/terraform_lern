@@ -35,9 +35,10 @@ Lyfe Cycle resources and ~ Zero DownTime:
 - `ignore_changes = [ami, user_data]` - prevent changes if chanded some paramters eg ami, user_data etc
 - EIP and creating new server before terminating old one (`create_before_destroy = true`)
 
-## lesson-7 
+## lesson-7
 
 Outputs:
+
 - server id
 - ip address
 - Outputs to separate file
@@ -46,10 +47,10 @@ Outputs:
 
 Just move from `web_server.tf` to `main.tf` to terraform code style
 
-
 ## lesson-8
 
 Work with server dependencies
+
 - depends_on used as array for dependency servers from each other
 
 ## lesson-9
@@ -57,3 +58,7 @@ Work with server dependencies
 [Data source](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/instance) and [Meta Data Sources](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region)
 
 Learn on creation subnets
+
+## lesson-10
+
+Data Source [AMI](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) search and create server based on latest ami.
