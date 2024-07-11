@@ -62,3 +62,30 @@ Learn on creation subnets
 ## lesson-10
 
 Data Source [AMI](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) search and create server based on latest ami.
+
+## lesson-11
+
+High availability web server + green/blue deployment in default VPC
+
+- Auto Scaling Group using 2 Availability Zones
+- Classic Load Balancer in 2 Availability Zones
+
+## lesson-12
+
+High availability web server + green/blue deployment in default VPC
+
+- Default Tags
+- Auto Scaling Group using 2 Availability Zones
+- Launch Template
+
+New way to organize availability
+
+
+## lesson-13
+
+Using variables
+- without default
+- default
+- description
+- types
+- merge tags
