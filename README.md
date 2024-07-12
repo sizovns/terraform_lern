@@ -96,3 +96,10 @@ Using tfvars
 - Using env variables `export TF_VAR_variable_name=variable_value`
 - Using `terraform.tfvars` - replaced variables to specified in file
 - Using `*.auto.tfvars` for several envs, to specify what var file to use: `terraform plan -var-file="dev.auto.tfvars"`
+
+## lesson-14
+
+Local vars
+
+- Using local vars to create var from several vars.
+- Using join to create string with delimiter from a list
