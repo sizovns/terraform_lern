@@ -2,7 +2,9 @@ provider "aws" {
   region = var.region
 
   default_tags {
-    tags = var.common_tags
+    tags = merge(var.common_tags, {
+      Region = var.region
+    })
   }
 }
 
@@ -52,4 +54,3 @@ resource "aws_eip" "my_server_eip" {
     Name = "${var.common_tags["Environment"]} - Static Server IP"
   })
 }
-

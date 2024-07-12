@@ -80,12 +80,19 @@ High availability web server + green/blue deployment in default VPC
 
 New way to organize availability
 
-
 ## lesson-13
 
 Using variables
+
 - without default
 - default
 - description
 - types
 - merge tags
+
+Using tfvars
+
+- Using `terraform <command> -var="variable_name=variable_value"`
+- Using env variables `export TF_VAR_variable_name=variable_value`
+- Using `terraform.tfvars` - replaced variables to specified in file
+- Using `*.auto.tfvars` for several envs, to specify what var file to use: `terraform plan -var-file="dev.auto.tfvars"`
