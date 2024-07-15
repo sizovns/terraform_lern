@@ -4,7 +4,7 @@ provider "aws" {
     tags = {
       Owner     = "Nikita S"
       CreatedBy = "Terraform"
-      Project   = "Terraform Lesson 17"
+      Project   = "Terraform Lesson 18"
     }
   }
 }

@@ -141,3 +141,6 @@ Using cycles count and for it
 ## lesson-19
 
 Create resources (deployments) to several regions or accounts
+
+- Use alias in provider section with provider in resource section
+- Use other account with role block `assume_role` in `provider`, or if use other creds `access_key`, `secret_key` in `provider`
