@@ -124,3 +124,20 @@ Using Lookups and Conditions
 
 - if condition (:? elvis `intance_type = var.env == "prod" ? "t2.large" : "t2.micro"`)
 - Lookup (how to get from map - `intance_type = lookup(var.ec2_size, "prod")` from where we get and key to get)
+
+## lesson-18
+
+Using cycles count and for it
+
+- Using `count` with length of list
+- Using `element(list, index)`
+- Using index of count `count.index`
+- Get only 1 field form list of objects (use `[*]` and field name `id` on resource eg `aws_iam_users.users[*].id`)
+- Using for i in list to output several values from iterated object
+- Using for i in list to output in map (when create map we use key => value)
+- Using for i with if condition
+- For dinamic use `for_each`
+
+## lesson-19
+
+Create resources (deployments) to several regions or accounts
