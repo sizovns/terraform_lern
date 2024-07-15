@@ -103,3 +103,17 @@ Local vars
 
 - Using local vars to create var from several vars.
 - Using join to create string with delimiter from a list
+
+## lesson-15
+
+Using local-exec (run local commands)
+
+- Using resource `null_resource`
+
+## lesson-16
+
+Using SSM Parameter Strore for storing passwords
+
+- How to store and get passwords from SSM
+- How to change passwords (using `keepers` and some variable)
+- How to use passwords on RDS
