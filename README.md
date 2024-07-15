@@ -117,3 +117,10 @@ Using SSM Parameter Strore for storing passwords
 - How to store and get passwords from SSM
 - How to change passwords (using `keepers` and some variable)
 - How to use passwords on RDS
+
+## lesson-17
+
+Using Lookups and Conditions
+
+- if condition (:? elvis `intance_type = var.env == "prod" ? "t2.large" : "t2.micro"`)
+- Lookup (how to get from map - `intance_type = lookup(var.ec2_size, "prod")` from where we get and key to get)
