@@ -144,3 +144,29 @@ Create resources (deployments) to several regions or accounts
 
 - Use alias in provider section with provider in resource section
 - Use other account with role block `assume_role` in `provider`, or if use other creds `access_key`, `secret_key` in `provider`
+
+## lesson-20
+
+Terraform remote state
+
+- Create a bucket for tfstate storage (important add versioning)
+- Using `terraform` block to use tfstate from s3 bucket
+- To get data from other remote state need to set output and get by `data "terraform_remote_state"`
+
+## lesson-21
+
+Terraform modules
+
+- Modules in terraform it like functions in programmin lang.
+- Module should be located in other directory or in other git repo
+- To create module need to delete `provider` section and move it to separate directory
+- To use module we created directory `project-1`
+- To use module needs to use block with `module` and paramter `source`
+- [Source](https://developer.hashicorp.com/terraform/language/modules/sources) could be local or some remote repo/registry
+- I use my own github [repo](https://github.com/sizovns/terraform_lern_modules) for modules (`aws_network`)
+
+## lesson-22
+
+Create terraform module which will be in use on several AWS Regions or Accounts
+
+- To use several providers in module needs to use section `terraform` with `require_providers` section (`module/servers/main.tf`)
