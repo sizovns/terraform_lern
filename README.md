@@ -197,7 +197,7 @@ Work with GCP
 - Create a instance
 
 
-## Usefull links 
+## Useful links 
 
 How to lern more
 
