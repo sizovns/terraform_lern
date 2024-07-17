@@ -170,3 +170,12 @@ Terraform modules
 Create terraform module which will be in use on several AWS Regions or Accounts
 
 - To use several providers in module needs to use section `terraform` with `require_providers` section (`module/servers/main.tf`)
+
+## lesson-23
+
+Example of deploy several infrastructures for envs (eg Dev, Staging, Prod)
+
+- Mostly here we will have something like structure without real terraform code
+- Do not forgot using remote state and separate to files `variables` and `outputs`
+- Do not forgot naming of remote state, where your code - same with remote state dir -
+  eg for dev app1 (`dev/vpc/applications/app1/terraform.tfstate`)
