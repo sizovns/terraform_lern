@@ -187,3 +187,21 @@ Global variables
 - Save global vars to remote state
 - To use global vars needs to get data from other remote state `data "terraform_remote_state"`
 - To use global vars recommended use `locals` to avoid big names
+
+
+## lesson-25
+
+Work with GCP
+- Create an account
+- Mange key
+- Create a instance
+
+
+## Usefull links 
+
+How to lern more
+
+- Lern from terraform - https://developer.hashicorp.com/terraform/tutorials
+- Blog - https://blog.gruntwork.io/terraform-up-running-5869b53edcde
+- Terrafrom modules repo - https://github.com/terraform-aws-modules
+-  
