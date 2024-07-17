@@ -179,3 +179,11 @@ Example of deploy several infrastructures for envs (eg Dev, Staging, Prod)
 - Do not forgot using remote state and separate to files `variables` and `outputs`
 - Do not forgot naming of remote state, where your code - same with remote state dir -
   eg for dev app1 (`dev/vpc/applications/app1/terraform.tfstate`)
+
+## lesson-24
+
+Global variables
+
+- Save global vars to remote state
+- To use global vars needs to get data from other remote state `data "terraform_remote_state"`
+- To use global vars recommended use `locals` to avoid big names
