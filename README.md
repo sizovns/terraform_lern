@@ -203,6 +203,7 @@ Work with manualy created resources:
 1. Some created resource in cloud
 2. In `main.tf` need to use empty resource (eg `resource "aws_instance" "my" {}`)
 3. init and import (`terraform import aws_instance.my i-0641f8d266e193134`)
+4. Fix some problems which will gave you terraform (plan/apply) from tfstate or command output
 
 Example:
 
