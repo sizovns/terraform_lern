@@ -228,6 +228,15 @@ Semi-automatic resource import (v1.5 and later)
 2. To import need run command `terraform plan -generate-config-out=generated-sg.tf`
 3. Now all resources in generated file, we can apply to import it and change what we need to
 
+
+## lesson-28
+
+How to recreate resource
+1. You can recreate resource by comment this resource than apply and uncomment and apply again
+2. You can recreate resource by using `count=0`
+3. And use `terraform taint` - `terraform taint aws_instance.node2` and after apply
+
+
 ## Useful links
 
 How to lern more
