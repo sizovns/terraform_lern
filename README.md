@@ -220,6 +220,14 @@ The resources that were imported are shown above. These resources are now in
 your Terraform state and will henceforth be managed by Terraform.
 ```
 
+## lesson-27
+
+Semi-automatic resource import (v1.5 and later)
+
+1. Need to declare block `import {}` with id from and to resource
+2. To import need run command `terraform plan -generate-config-out=generated-sg.tf`
+3. Now all resources in generated file, we can apply to import it and change what we need to
+
 ## Useful links
 
 How to lern more
