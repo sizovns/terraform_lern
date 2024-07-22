@@ -188,20 +188,41 @@ Global variables
 - To use global vars needs to get data from other remote state `data "terraform_remote_state"`
 - To use global vars recommended use `locals` to avoid big names
 
-
 ## lesson-25
 
 Work with GCP
+
 - Create an account
 - Mange key
 - Create a instance
 
+## lesson-26
 
-## Useful links 
+Work with manualy created resources:
+
+1. Some created resource in cloud
+2. In `main.tf` need to use empty resource (eg `resource "aws_instance" "my" {}`)
+3. init and import (`terraform import aws_instance.my i-0641f8d266e193134`)
+
+Example:
+
+```
+terraform import aws_instance.my_imported_instance i-0d86663bf6d6c4709
+aws_instance.my_imported_instance: Importing from ID "i-0d86663bf6d6c4709"...
+aws_instance.my_imported_instance: Import prepared!
+  Prepared aws_instance for import
+aws_instance.my_imported_instance: Refreshing state... [id=i-0d86663bf6d6c4709]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your Terraform state and will henceforth be managed by Terraform.
+```
+
+## Useful links
 
 How to lern more
 
 - Lern from terraform - https://developer.hashicorp.com/terraform/tutorials
 - Blog - https://blog.gruntwork.io/terraform-up-running-5869b53edcde
 - Terrafrom modules repo - https://github.com/terraform-aws-modules
--  
