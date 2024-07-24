@@ -268,6 +268,22 @@ If you forgot something to move:
 3. Now you can push this local tfstate to remote s3
 4. terraform apply
 
+## lesson-30
+
+Work with terraform workspace:
+
+1. `terraform workspace show` - by default you use default workspace
+2. `terraform workspace list` - show all workspaces
+3. `terraform workspace new` - create new workspace and switch to it
+4. `terraform workspace select` - switch to another workspace
+5. `terraform workaspace delete` - delete workspace
+
+As example we firstry apply our configuration, then created new workspace, and now we can apply our configuration again, because we an another workspace.
+
+When we created a new workspace we will see in s3 bucket new bucket directory `env:/workspace_name/dir_to_tfstatefile`
+
+Some of resources will conflict by name thats why we should use special variable in it - `${terraform.workspace}`
+
 ## Useful links
 
 How to lern more
