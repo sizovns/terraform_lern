@@ -237,6 +237,37 @@ How to recreate resource
 3. You can use `terraform taint` - `terraform taint aws_instance.node2` and after apply
 4. You can use `terraform apply -replace aws_instance.node2` it will recreate resource
 
+## lesson-29
+
+Working with Remote State and Refactoring code (cli `terraform state`)
+
+1. `terraform state show` - show state of specific resource (get data only)
+2. `terraform state list` - show all resources which fixed in remote state (get data only)
+3. `terraform state pull` - read full remote state and print out (you can save state to file) (get data only)
+4. `tarraform state rm resource_name` - removed state of some resource (change data)
+5. `terraform state mv resource_name_old resource_name_new` - changed name of resource (change data)
+6. `terraform state push` - overwrite remote state
+
+We have old-all and we want to separate it to staging and prod dirs and remote state
+
+!IMPORTANT do not use default VPC or you need to move it to both envs (hard way :D )
+
+1. Create new dirs (new-prod and new-stag)
+2. Copy files to specific envs and fix some variables (like where we will storage remote state, etc)
+3. Move state `terraform state mv -state-out="terraform.tfstate" aws_eip.prod-ip1 aws_eip.prod-ip1` (eg for aws_eip.prod_ip1), to add to this local terrafrom tfstate file data you can run this command again with other parameters as resources
+4. After move `terraform.tfstate` to `new-prod` directory and init terraform, and you will see that terraform give to you possibility to import existing local tfstate to new backend (s3).
+5. Terraform apply(plan) to check that 0 changes
+6. Same for new-stag
+7. Delete other resources from old-all
+8. Done, now you can manage by terraform both you envs separatly
+
+If you forgot something to move:
+
+1. Pull tfstate from some of envs (eg prod)
+2. Move from old to new tfstate which you created by pull
+3. Now you can push this local tfstate to remote s3
+4. terraform apply
+
 ## Useful links
 
 How to lern more
