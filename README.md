@@ -284,7 +284,6 @@ When we created a new workspace we will see in s3 bucket new bucket directory `e
 
 Some of resources will conflict by name thats why we should use special variable in it - `${terraform.workspace}`
 
-
 ## lesson-31
 
 Custom provider (eg domino pizza)
@@ -294,6 +293,10 @@ Custom provider (eg domino pizza)
 3. Create directory for this custom provider `~/.terraform.d/plugins/dominos.com/myorg/dominos/1.0/linux_amd64/`
 4. Move provider to custom provider dir
 5. Add terraform required providers with source and version
+
+## lesson-32
+
+Use loops inside looops for difficult tasks
 
 ## Useful links
 
